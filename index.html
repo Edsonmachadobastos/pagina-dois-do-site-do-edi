@@ -1,0 +1,225 @@
+<!-- pagina2.html - Segunda página da galeria futurista -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página 2 - Painel de Downloads</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <style>
+    :root {
+      --bg-dark: #0f0f1a;
+      --bg-light: #f2f2f2;
+      --text-dark: #ffffff;
+      --text-light: #000000;
+      --card-glass-dark: rgba(255, 255, 255, 0.05);
+      --card-glass-light: rgba(0, 0, 0, 0.05);
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Orbitron', sans-serif;
+      background: var(--bg-dark);
+      color: var(--text-dark);
+      transition: 0.4s ease all;
+    }
+
+    .theme-toggle {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      z-index: 999;
+      padding: 10px 20px;
+      border: 1px solid cyan;
+      background: transparent;
+      color: cyan;
+      border-radius: 25px;
+      cursor: pointer;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 100px auto 40px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      padding: 0 20px;
+    }
+
+    .card {
+      background: var(--card-glass-dark);
+      border-radius: 16px;
+      backdrop-filter: blur(8px);
+      box-shadow: 0 0 15px rgba(0,255,255,0.15);
+      overflow: hidden;
+      transition: 0.3s;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .card button {
+      margin: 15px;
+      padding: 10px 20px;
+      background: cyan;
+      color: black;
+      border: none;
+      border-radius: 25px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .card button:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 10px cyan;
+    }
+
+    .page-nav {
+      text-align: center;
+      margin: 40px 0;
+    }
+
+    .page-nav a {
+      display: inline-block;
+      text-decoration: none;
+      padding: 6px 12px;
+      border-radius: 50%;
+      background: cyan;
+      color: black;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .page-nav a:hover {
+      background: #00ffffaa;
+      box-shadow: 0 0 5px cyan;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      font-size: 0.9rem;
+      opacity: 0.5;
+    }
+  </style>
+</head>
+<body>
+ <!-- Menu fixo e estilizado no topo esquerdo -->
+<div style="
+position: fixed;
+top: 20px;
+left: 20px;
+backdrop-filter: blur(10px);
+background: rgba(255, 255, 255, 0.1);
+border: 1px solid rgba(255, 255, 255, 0.2);
+border-radius: 12px;
+padding: 10px 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+z-index: 1000;
+">
+
+<!-- Botão de Voltar -->
+<a href="index.html" style="
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: opacity 0.3s ease;
+" onmouseover="this.style.opacity='0.7'" onmouseout="this.style.opacity='1'">
+<!-- Ícone SVG de seta -->
+<svg width="16" height="16" fill="white" viewBox="0 0 24 24">
+  <path d="M15 6l-6 6 6 6"/>
+</svg>
+🏠 INICIO
+</a>
+
+</div>
+
+</div>
+
+  <button class="theme-toggle" onclick="toggleTheme()">🌗 Modo Claro/Escuro</button>
+
+  <div class="container">
+    <!-- Cards da página 2 -->
+    <div class="card" data-aos="fade-up">
+      <img src="https://via.placeholder.com/400x200?text=Imagem+11" alt="Imagem 11">
+      <button onclick="window.open('https://example.com/download11')">📥 Baixar</button>
+    </div>
+    <div class="card" data-aos="fade-up">
+      <img src="https://via.placeholder.com/400x200?text=Imagem+12" alt="Imagem 12">
+      <button onclick="window.open('https://example.com/download12')">📥 Baixar</button>
+    </div>
+    <div class="card" data-aos="fade-up">
+      <img src="https://via.placeholder.com/400x200?text=Imagem+13" alt="Imagem 13">
+      <button onclick="window.open('https://example.com/download13')">📥 Baixar</button>
+    </div>
+    <div class="card" data-aos="fade-up">
+      <img src="https://via.placeholder.com/400x200?text=Imagem+14" alt="Imagem 14">
+      <button onclick="window.open('https://example.com/download14')">📥 Baixar</button>
+    </div>
+    <div class="card" data-aos="fade-up">
+      <img src="https://via.placeholder.com/400x200?text=Imagem+15" alt="Imagem 15">
+      <button onclick="window.open('https://example.com/download15')">📥 Baixar</button>
+    </div>
+    <div class="card" data-aos="fade-up">
+      <img src="https://via.placeholder.com/400x200?text=Imagem+16" alt="Imagem 16">
+      <button onclick="window.open('https://example.com/download16')">📥 Baixar</button>
+    </div>
+    <div class="card" data-aos="fade-up">
+      <img src="https://via.placeholder.com/400x200?text=Imagem+17" alt="Imagem 17">
+      <button onclick="window.open('https://example.com/download17')">📥 Baixar</button>
+    </div>
+    <div class="card" data-aos="fade-up">
+      <img src="https://via.placeholder.com/400x200?text=Imagem+18" alt="Imagem 18">
+      <button onclick="window.open('https://example.com/download18')">📥 Baixar</button>
+    </div>
+    <div class="card" data-aos="fade-up">
+      <img src="https://via.placeholder.com/400x200?text=Imagem+19" alt="Imagem 19">
+      <button onclick="window.open('https://example.com/download19')">📥 Baixar</button>
+    </div>
+    <div class="card" data-aos="fade-up">
+      <img src="https://via.placeholder.com/400x200?text=Imagem+20" alt="Imagem 20">
+      <button onclick="window.open('https://example.com/download20')">📥 Baixar</button>
+    </div>
+  </div>
+
+  <div class="page-nav">
+    <a href="painel.html">1</a>
+  </div>
+
+  
+  <footer>
+    Feito com 💻 estilo futurista - personalize os links e imagens como quiser.
+  </footer>
+
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+
+    let darkMode = true;
+
+    function toggleTheme() {
+      darkMode = !darkMode;
+      document.body.style.backgroundColor = darkMode ? "var(--bg-dark)" : "var(--bg-light)";
+      document.body.style.color = darkMode ? "var(--text-dark)" : "var(--text-light)";
+
+      const cards = document.querySelectorAll('.card');
+      cards.forEach(card => {
+        card.style.background = darkMode ? "var(--card-glass-dark)" : "var(--card-glass-light)";
+      });
+    }
+  </script>
+</body>
+</html>
